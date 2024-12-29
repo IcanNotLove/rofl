@@ -1,0 +1,37 @@
+body {
+    background-color: black; /* Черный фон */
+    display: flex; /* Используем flexbox для центрирования */
+    justify-content: center; /* Центрируем по горизонтали */
+    align-items: center; /* Центрируем по вертикали */
+    height: 100vh; /* Высота на весь экран */
+    margin: 0; /* Убираем отступы */
+    color: white; /* Белый цвет текста */
+    font-family: Arial, sans-serif; /* Шрифт */
+    position: relative; /* Для позиционирования видео */
+    overflow: hidden; /* Скрываем всё, что выходит за границы */
+}
+
+.button {
+    background-color: white; /* Белый фон кнопки */
+    color: black; /* Черный текст на кнопке */
+    border: none; /* Убираем границу */
+    padding: 15px 30px; /* Отступы внутри кнопки */
+    font-size: 16px; /* Размер шрифта */
+    cursor: pointer; /* Указатель при наведении */
+    border-radius: 5px; /* Закругленные углы */
+    transition: background-color 0.3s; /* Плавный переход цвета */
+}
+
+.button:hover {
+    background-color: #f0f0f0; /* Цвет кнопки при наведении */
+}
+
+video {
+    display: none; /* Скрываем видео по умолчанию */
+    position: absolute; /* Позиционируем видео */
+    top: 0; /* Сверху */
+    left: 0; /* Слева */
+    width: 100%; /* На всю ширину */
+    height: 100%; /* На всю высоту */
+    object-fit: cover; /* Чтобы видео заполняло весь экран */
+}

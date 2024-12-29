@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <button class="button" id="playButton">Нажми меня</button>
+        <video id="video" loop>
+            <source src="video_2024-12-29_22-06-00.mp4" type="video/mp4"> <!-- Укажите путь к вашему видео -->
+            Ваш браузер не поддерживает видео.
+        </video>
+    </div>
+
+    <script>
+        const button = document.getElementById('playButton');
+        const video = document.getElementById('video');
+
+        button.addEventListener('click', () => {
+            video.style.display = 'block'; // Показываем видео
+            video.play(); // Запускаем воспроизведение
+        });
+    </script>
+</body>
+</html>
